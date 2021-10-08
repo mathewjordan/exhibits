@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
-import Manifest from "./Manifest";
+import React, { Component } from "react"
+import Manifest from "./Manifest"
 
 class Present extends Component {
-
   render() {
-
-    const {sequence} = this.props
+    const { sequence } = this.props
 
     let region = null
     let autozoom = false
@@ -18,8 +16,6 @@ class Present extends Component {
       autozoom = sequence[0].autozoom
     }
 
-    console.log(sequence)
-
     return (
       <div className="yith-structure">
         <div className={sequence[0].class}>
@@ -27,13 +23,12 @@ class Present extends Component {
             mode="present"
             manifest={sequence[0].manifest}
             region={region}
-            autozoom={autozoom} />
+            autozoom={autozoom}
+          />
         </div>
       </div>
     )
-
   }
-
 }
 
-export default Present;
+export default Present

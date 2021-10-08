@@ -1,26 +1,26 @@
 {
-  "slug": "sample",
-  "title": "Sample Exhibit",
-  "path": "/sample",
+  "slug": "yith",
+  "title": "Yith",
+  "path": "/yith",
   "nav": [
     {
-      "to": "/sample",
+      "to": "/",
       "text": "Sample"
     },
     {
-      "to": "/sample/present",
+      "to": "/present",
       "text": "Present"
     },
     {
-      "to": "/sample/comparison",
+      "to": "/comparison",
       "text": "Comparison"
     },
     {
-      "to": "/sample/chronology",
+      "to": "/chronology",
       "text": "Chronology"
     },
     {
-      "to": "/sample/projection",
+      "to": "/projection",
       "text": "Projection"
     }
   ],

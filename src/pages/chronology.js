@@ -6,7 +6,7 @@ import Seo from "../../components/seo"
 import Yith from "../../components/yith/Yith"
 
 const Chronology = () => (
-  <Layout exhibit="sample">
+  <Layout exhibit="yith">
     <Seo title="Chronology: Sample Exhibit" />
 
     <Yith

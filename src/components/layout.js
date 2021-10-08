@@ -13,21 +13,19 @@ import Header from "./header"
 import "../sass/styles.scss"
 import { Helmet } from "react-helmet"
 import _ from "lodash"
-import UniversalHeader from "./UniversalHeader"
 
 const Layout = ({ exhibit, children }) => {
-
   const results = useStaticQuery(graphql`
     query ExhibitDataQuery {
       allDataJson {
         edges {
           node {
-            slug,
-            title,
+            slug
+            title
             nav {
               to
               text
-            },
+            }
             styles
           }
         }
@@ -35,25 +33,23 @@ const Layout = ({ exhibit, children }) => {
     }
   `)
 
-  const items = results.allDataJson.edges.map(function(el){
+  const items = results.allDataJson.edges.map(function (el) {
     return el.node
-  });
+  })
 
   const data = _.find(items, {
-      'slug': exhibit
-    })
+    slug: exhibit,
+  })
 
   return (
     <>
       <Helmet>
         <title>Thing 1</title>
       </Helmet>
-      <UniversalHeader/>
       <Header structure={data} />
       <main>
         <article>{children}</article>
       </main>
-      <footer id="utk-lib-footer"></footer>
     </>
   )
 }

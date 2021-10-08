@@ -1,15 +1,15 @@
-$sans: "Gotham", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$sans: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-$serif: 'DM Serif Display', Georgia, serif;
+$serif: "Markazi Text", Georgia, serif;
 
-$primary: #313E48;
-$accent: #FF8200;
-$highlight: #1C7CD5;
-$secondary: #465866;
-$muted: #e0e0e0;
+$primary: #313e48;
+$accent: #e42353;
+$highlight: #1c7cd5;
+$secondary: #313e48;
+$muted: #fff;
 $white: #fff;
-$heading-grey: #58595b;
+$heading-grey: #313e48;
 $heading-grey-darker: darken($heading-grey, 20%);
 
 $box-shadow: 8px 8px 23px rgba(0, 0, 0, 0.15);

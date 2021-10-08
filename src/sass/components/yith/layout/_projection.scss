@@ -7,7 +7,6 @@
   }
 
   .yith-projection-teaser {
-
     &:hover,
     &:focus {
       .yith-teaser-figure img {
@@ -41,7 +40,7 @@
       padding: 0 3em 1em 0;
       font-family: $serif;
       font-size: 2rem;
-      line-height: 1.25em;
+      line-height: 1em;
     }
 
     .yith-expand {
@@ -114,8 +113,6 @@
           color: white;
           width: 50%;
           transition: all 200ms ease;
-
-
 
           &:hover {
             background-color: $highlight;
@@ -201,5 +198,5 @@
         }
       }
     }
-  } 
+  }
 }

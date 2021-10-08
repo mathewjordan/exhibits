@@ -26,7 +26,6 @@ section.exhibits-section {
       }
     }
 
-
     > h1,
     > h2,
     > h3,
@@ -34,8 +33,9 @@ section.exhibits-section {
     > h5 {
       letter-spacing: -0.01em;
       font-family: $serif;
-      font-weight: 400;
+      font-weight: 700;
       color: $primary;
+      font-size: 200%;
 
       &:first-child {
         margin-top: 0;

@@ -30,8 +30,6 @@
     padding: 1rem 2rem;
     transition: all 200ms ease-in-out;
     display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
 
     @include breakpoints(lg) {
       flex-direction: row;
@@ -49,12 +47,11 @@
     a:visited {
       padding: 0.5rem 1rem;
       font-weight: 700;
-      font-size: 0.8333em;
+      font-size: 1.25em;
       position: relative;
       background-color: transparent;
       transition: all 200ms ease-in-out;
       color: $primary;
-      letter-spacing: 0.1em;
 
       &:last-child {
         margin-right: 0;
@@ -63,32 +60,24 @@
       &::after {
         width: 0;
         height: 3px;
-        background-color: $accent;
-        content: ' ';
+        background-color: $highlight;
+        content: " ";
         position: absolute;
-        left: 0.75rem;
-        bottom: 5px;
+        left: 1rem;
+        bottom: 2px;
         transition: all 200ms ease-in-out;
       }
 
-    &.active {
-      &::after {
-        width: calc(100% - 1.5rem);
+      &.active {
+        color: $highlight;
+      }
 
-        @include breakpoints(xxs, xs) {
-          width: calc(100% - 6rem);
+      &:hover {
+        color: $highlight;
+        &::after {
+          width: calc(100% - 2rem);
         }
       }
     }
-
-    &:hover {
-      box-shadow: $box-shadow-top;
-
-      a.active::after {
-        background-color: lighten($white, 10);
-      }
-    }
-
   }
-}
 }

@@ -5,14 +5,14 @@
   "nav": [
     {
       "to": "/",
-      "text": "Sample"
+      "text": "Yith"
     },
     {
-      "to": "/present",
+      "to": "/yith/present",
       "text": "Present"
     },
     {
-      "to": "/comparison",
+      "to": "/yith/comparison",
       "text": "Comparison"
     },
     {
@@ -20,7 +20,7 @@
       "text": "Chronology"
     },
     {
-      "to": "/projection",
+      "to": "/yith/projection",
       "text": "Projection"
     }
   ],

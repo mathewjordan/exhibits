@@ -41,6 +41,8 @@ const Layout = ({ exhibit, children }) => {
     slug: exhibit,
   })
 
+  console.log(data)
+
   return (
     <>
       <Helmet>

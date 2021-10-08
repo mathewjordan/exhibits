@@ -3,7 +3,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const exhibit  = 'default'
+const exhibit = "yith"
 
 const NotFoundPage = () => (
   <Layout exhibit={exhibit}>
